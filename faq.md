@@ -14,7 +14,7 @@ summary: Frequently asked questions about Haveno
 - [What currencies will be listed?](#what-currencies-will-be-listed)
 - [What's the structure of Haveno?](#whats-the-structure-of-haveno)
 - [Will there be KYC?](#will-there-be-kyc)
-- [Where can i find the details of how the platform will work?](#where-can-i-find-the-details-of-how-the-platform-will-work)
+- [Where can I find the details on how the platform will work?](#where-can-i-find-details-on-how-the-platform-will-work)
 - [Do you have more docs?](#do-you-have-more-docs)
 - [What are arbitrators? Why do you need them?](#what-are-arbitrators-why-do-you-need-them)
 - [What are the fees for trading on Haveno?](#what-are-the-fees-for-trading-on-haveno)
@@ -57,7 +57,7 @@ This list is not final. We will have a small set of currencies at launch, but mo
 
 ## [What's the structure of Haveno?](#whats-the-structure-of-haveno)
 
-We explained in detail the structure of Haveno in a [dedicated blog post]({{ site.baseurl }}/2022/02/02/haveno-structure.html), but a summary will be:
+We explained the structure of Haveno in detail in a [dedicated blog post]({{ site.baseurl }}/2022/02/02/haveno-structure.html). Here's a summary:
 
 - Half of the fees paid on Haveno will be used to advance Monero and Haveno development
 
@@ -65,41 +65,41 @@ We explained in detail the structure of Haveno in a [dedicated blog post]({{ sit
 
 - Engine will be composed by a council (Engine Council), composed by 5 trusted members of the Monero and Haveno developer community (including one Monero Core Team member)
 
-Thanks to the funds that will be sent to Engine, Haveno will be a major contributor to Monero development, allowing Monero to not need to rely on generous donors and become self-sustaining.
+Thanks to the funds that will be sent to Engine, Haveno will be a major contributor to Monero development, allowing Monero to cease its reliance on generous donors and become self-sustaining.
 
-While this structure is exciting and opens a lot of doors, we want Haveno to be as decentralized and robust as possible, that's why we will always look for ways to decentralized things further.
+While this structure is exciting and opens a lot of doors, we want Haveno to be as decentralized and robust as possible. That's why we will always look for ways to decentralize things further.
 
 ## [Will there be KYC?](#will-there-be-kyc)
 
-No. Haveno was created out of the desire to provide people a peer to peer and decentralized ways to exchange Monero for fiat currency. Haveno is and will always be  no-KYC only.
+No. Haveno was created out of the desire to provide people a peer to peer and decentralized way to exchange Monero for fiat currency. Haveno is and will always be non-KYC.
 
-## [Where can i find the details of how the platform will work?](#where-can-i-find-the-details-of-how-the-platform-will-work)
+## [Where can I find details on how the platform will work?](#where-can-i-find-details-on-how-the-platform-will-work)
 
 Haveno's trade protocol is [explained in detail on Github](https://github.com/haveno-dex/haveno/blob/master/docs/trade_protocol/trade-protocol.md).
 
 ## [Do you have more docs?](#do-you-have-more-docs)
 
-The documentation with protocol details, contributing guides, installing instructions, etc is [in our GitHub repository](https://github.com/haveno-dex/haveno/tree/master/docs)
+Our documentation can be found [in our GitHub Repository](https://github.com/haveno-dex/haveno/tree/master/docs). It contains protcol details, contributing guides, installation instructions, and more.
 
 ## [What are arbitrators? Why do you need them?](#what-are-arbitrators-why-do-you-need-them)
 
-Arbitrators are the last step of conflict resolution on Haveno (after traders tried to settle by themselves using th chat embedded in the platform) and we inherit them from Bisq. They have a crucial role in the trade process, because they hold one of the three keys during a trade.
+Arbitrators are the last step of conflict resolution on Haveno, coming after traders attempt to settle disputes by themselves using the chat embedded in the platform, and we inherit them from Bisq. They have a crucial role in the trade process, because they hold one of the three keys during a trade.
 
-Holding one of the three keys makes them a sensitive role, because they could theoretically collude with one of the 2 traders. We are exploring the possibility of [migrating to a 2/2 multisig protocol instead of 2/3](https://github.com/haveno-dex/haveno-meta/issues/14), but for the time being, we will adopt several measures to reduce drastically the risks for traders:
+Holding one of the three keys makes them a sensitive role, because they could theoretically collude with one of the 2 traders. We are exploring the possibility of [migrating to a 2/2 multisig protocol instead of 2/3](https://github.com/haveno-dex/haveno-meta/issues/14), but for the time being, we will adopt several measures to drastically reduce the risks for traders:
 
 - Arbitrators will be picked up randomly from the pool of available arbitrators. This reduces drastically the possibility of collusion, because traders have no possibility of choosing an arbitrator.
 
 - Arbitrators will probably set bonds. These bonds will be locked in the [Engine platform](#whats-the-structure-of-haveno) and will be used to cover the loss of the victim in case of a malicious arbitrator.
 
-- Arbitrators will be trusted members of the Haveno and Monero community, which will be appointed by the Engine Council with the participation of the community.
+- Arbitrators will be trusted members of the Haveno and Monero community, and they will be appointed by the Engine Council in collaboration with the aforementioned community.
 
 ## [What are the fees for trading on Haveno?](#what-are-the-fees-for-trading-on-haveno)
 
 Haveno traders will pay two fees. The fee for transacting on the Monero network (a fraction of a cent) and the Haveno fee.
 
-We haven't made a final decision on the amount of the Haveno fee, but it will be probably less than 1% of the traded amount.
+We haven't made a final decision on the amount of the Haveno fee, but it will most likely be less than 1% of the traded amount.
 
-All fees paid on Haveno will be sent to Engine (see [What's the structure of Haveno?](#whats-the-structure-of-haveno)) and will be used to reward contributors, pay for Haveno development and infrastructure, fund Monero development and research, etc. Fees are also used as an anti-spam mechanism to avoid abuse.
+All fees paid on Haveno will be sent to Engine (see [What's the structure of Haveno?](#whats-the-structure-of-haveno)), where they will be used to reward contributors, pay for Haveno development and infrastructure, fund Monero development and research, and more. Fees are also used as an anti-spam mechanism to avoid abuse.
 
 # Bisq and Haveno
 
@@ -145,7 +145,7 @@ Haveno will be faster because of three main factors:
 - [Research](https://github.com/haveno-dex/haveno-meta/blob/master/haveno-performance-report.md) by a Haveno contributor demonstrated that the resource consumption of Bisq is dominated by JavaFX, which causes the entire app to be slow and sometimes unresponsive. Haveno will have its own frontend separated by the backend. This will result in much lower resource usage and a much better experience for the end user.
 - It has no DAO, which is very resource hungry and needs to be synchronized each time the app is launched on Bisq. This impacts user experience heavily, especially if the user hasn't used Bisq in a long time. This important problem will not affect us, since we will not use the DAO, as explained [later in this FAQ](#why-no-dao).
 
-## [What are the differences in the trade protocol](#what-are-the-differences-in-the-trade-protocol)
+## [What are the differences in the trade protocol?](#what-are-the-differences-in-the-trade-protocol)
 
 The current trade protocol of Haveno is on Github: [docs/trade-protocol.md](https://github.com/haveno-dex/haveno/blob/master/docs/trade_protocol/trade-protocol.md)
 
